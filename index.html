@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onload = "carregar()">
+    <header>
+        <h1>Verificação de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento: 
+            <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+                <p>
+                    <input type="button" value="Verificar" onclick="verificar ()">
+                </p>
+            </p>
+        </div>
+        <div id = 'res'>
+            Preencha os dados acima para ver o Resultado!
+        </div>
+    </section>
+
+    <footer style="background-color: #007bff; color: white; text-align: center; padding: 0px;">
+        <p>© Aprendendo com Alura</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
